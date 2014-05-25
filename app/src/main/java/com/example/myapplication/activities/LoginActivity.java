@@ -15,16 +15,11 @@ import com.example.myapplication.activities.common.ParentActivity;
 * */
 public class LoginActivity extends ParentActivity {
 
-    private final String TAG = this.getClass().getName();
-
-    boolean isExit = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-
 
 
     public void onLogin(View view) {
@@ -64,7 +59,6 @@ public class LoginActivity extends ParentActivity {
         startActivity(intent);
 
     }
-
 
 
 }

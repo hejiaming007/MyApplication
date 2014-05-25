@@ -11,7 +11,9 @@ import com.example.myapplication.R;
 import com.example.myapplication.activities.common.ParentActivity;
 
 public class ScrollViewActivity extends ParentActivity {
-    /** Called when the activity is first created. */
+    /**
+     * Called when the activity is first created.
+     */
     private LinearLayout mLayout;
     private ScrollView sView;
     private final Handler mHandler = new Handler();
@@ -26,21 +28,6 @@ public class ScrollViewActivity extends ParentActivity {
         ((Button) this.findViewById(R.id.Button)).setOnClickListener(mClickListener);
 
     }
-/*
-    public boolean onKeyDown(int keyCode, KeyEvent event){
-        Button b = (Button) this.getCurrentFocus();
-        int count = mLayout.getChildCount();
-        Button bm = (Button) mLayout.getChildAt(count-1);
-
-        if(keyCode==KeyEvent.KEYCODE_DPAD_UP && b.getId()==R.id.Button){
-            bm.requestFocus();
-            return true;
-        }else if(keyCode==KeyEvent.KEYCODE_DPAD_DOWN && b.getId()==bm.getId()){
-            this.findViewById(R.id.Button).requestFocus();
-            return true;
-        }
-        return false;
-    }*/
 
     private Button.OnClickListener mClickListener = new Button.OnClickListener() {
 

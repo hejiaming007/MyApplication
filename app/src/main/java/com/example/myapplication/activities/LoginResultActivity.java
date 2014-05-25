@@ -12,10 +12,6 @@ import org.apache.commons.lang3.StringUtils;
 
 public class LoginResultActivity extends ParentActivity {
 
-
-    private final String TAG = this.getClass().getName();
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,8 +54,8 @@ public class LoginResultActivity extends ParentActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-            return super.onOptionsItemSelected(item);
-        }
+        return super.onOptionsItemSelected(item);
+    }
 
 
     private boolean authenticate(String username, String password) {

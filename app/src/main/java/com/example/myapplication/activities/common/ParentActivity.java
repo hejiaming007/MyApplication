@@ -10,7 +10,7 @@ import android.view.MenuItem;
  */
 public abstract class ParentActivity extends Activity {
 
-    private final String TAG = this.getClass().getName();
+    protected final String TAG = this.getClass().getName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
