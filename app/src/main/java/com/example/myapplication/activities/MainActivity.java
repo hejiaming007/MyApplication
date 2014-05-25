@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2014. Jimmy own this code.
+ */
+
 package com.example.myapplication.activities;
 
 import android.app.Activity;
@@ -61,6 +65,7 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -91,7 +96,6 @@ public class MainActivity extends Activity {
         overridePendingTransition(R.anim.zoomin, R.anim.zoomout);
 
     }
-
 
 
     @Override
@@ -129,8 +133,6 @@ public class MainActivity extends Activity {
         super.onRestart();
         Log.d(TAG, "onRestart...");
     }
-
-
 
 
 }

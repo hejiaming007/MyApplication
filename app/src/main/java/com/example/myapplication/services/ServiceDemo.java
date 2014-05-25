@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2014. Jimmy own this code.
+ */
+
 package com.example.myapplication.services;
 
 import android.app.Notification;
@@ -9,29 +13,26 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-
 import com.example.myapplication.R;
 
 import java.util.Random;
 
 public class ServiceDemo extends Service {
 
+    protected final String TAG = this.getClass().getName();
 
     public static final String ACTION = "com.example.myapplication.services.ServiceDemo";
 
-    public ServiceDemo() {
-    }
-
     @Override
     public IBinder onBind(Intent intent) {
-        Log.d("", "onBind");
+        Log.d(TAG, "onBind");
         return null;
     }
 
 
     @Override
     public void onCreate() {
-        Log.d("", "onCreate");
+        Log.d(TAG, "onCreate");
         super.onCreate();
 
         Context context = getApplicationContext();
@@ -56,8 +57,8 @@ public class ServiceDemo extends Service {
             @Override
             public void run() {
                 while (true) {
-                            Log.d("","ServiceDemo is running...");
-                            notificationManager.notify(new Random().nextInt(3), notification); //不同的id代表不同的通知，相同的id只会在通知栏显示一次
+                    Log.d(TAG, "ServiceDemo is running...");
+                    notificationManager.notify(new Random().nextInt(3), notification); //不同的id代表不同的通知，相同的id只会在通知栏显示一次
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
