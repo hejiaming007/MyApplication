@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jimmy</string>
+    <string name="login_demo">Login Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="Username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="RepeatBackKeyToExit">Confirm to exit?</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="settingsPage">Settings Page</string>
+    <string name="loginResult">Login Result</string>
+    <string name="test_scrollview">test_scrollview</string>
+    <string name="title_activity_main">Jimmy Demo</string>
+    <string name="scrollViewDemo">Scroll View Demo</string>
+
+</resources>

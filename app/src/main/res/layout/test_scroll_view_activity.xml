@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:scrollbars="vertical">
+    <LinearLayout android:id="@+id/LinearLayout"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/TestView" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="TestView0" />
+        <Button android:id="@+id/Button" android:text="Button0" android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+</ScrollView>
