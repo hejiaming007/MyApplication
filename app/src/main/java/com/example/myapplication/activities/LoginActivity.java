@@ -9,6 +9,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
@@ -23,6 +25,7 @@ public class LoginActivity extends ParentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        ((ImageView) findViewById(R.id.imageView)).startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate));
     }
 
 
@@ -44,6 +47,7 @@ public class LoginActivity extends ParentActivity {
 //        intent.putExtra("username",username);
 //        intent.putExtra("password",password);
         startActivity(intent);
+
 
         //Ev1.setText(strTmp);
     }

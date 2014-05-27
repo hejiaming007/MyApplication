@@ -1,3 +1,7 @@
+<!--
+  ~ Copyright (c) 2014. Jimmy own this code.
+  -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,5 +30,25 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="onGotoScrollViewActivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Demo 2"
+        android:id="@id/login_demo_2"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onGotoLoginActivity2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swip Demo"
+        android:id="@+id/button3"
+        android:layout_below="@id/login_demo_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onGotoSwipActivity" />
 
 </RelativeLayout>

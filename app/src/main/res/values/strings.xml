@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Jimmy own this code.
+  -->
+
 <resources>
 
     <string name="app_name">Jimmy</string>
@@ -14,5 +18,9 @@
     <string name="test_scrollview">test_scrollview</string>
     <string name="title_activity_main">Jimmy Demo</string>
     <string name="scrollViewDemo">Scroll View Demo</string>
+    <string name="swipActivity">Swip View Demo</string>
+    <string name="collectionDemoActivity">collection Demo Activity</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+
 
 </resources>

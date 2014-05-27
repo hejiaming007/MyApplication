@@ -13,6 +13,7 @@ import android.widget.ScrollView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.activities.common.ParentActivity;
+import com.example.myapplication.views.PieChart;
 
 public class ScrollViewActivity extends ParentActivity {
     /**
@@ -52,7 +53,10 @@ public class ScrollViewActivity extends ParentActivity {
             button.setText("Button" + index);//设置Button的文本信息
             button.setOnClickListener(mClickListener);// 添加点击事件监听
             button.setId(index++);
-            mLayout.addView(button, params);//添加一个Button控件  
+            PieChart chart = new PieChart(ScrollViewActivity.this);
+            //PieChat entry = new PieChat(ScrollViewActivity.this);
+            mLayout.addView(button, params);//添加一个Button控件
+            mLayout.addView(chart);
             mHandler.post(mScrollToButton);//传递一个消息进行滚动
 
         }

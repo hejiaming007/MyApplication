@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2014. Jimmy own this code.
+  -->
+
+<resources>
+    <item name="login_demo_2" type="id">Login Demo 2</item>
+</resources>

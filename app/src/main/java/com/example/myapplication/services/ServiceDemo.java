@@ -14,6 +14,7 @@ import android.os.IBinder;
 import android.util.Log;
 
 import com.example.myapplication.R;
+import com.example.myapplication.activities.MainActivity;
 
 import java.util.Random;
 
@@ -47,11 +48,13 @@ public class ServiceDemo extends Service {
         final Notification notification = new Notification(icon, cs, when);
         CharSequence contentTitle = "Text2"; //通知栏下拉后的标题
         CharSequence contentText = "Text3"; //通知栏下拉后的通知具体内容
-        Intent notificationIntent = new Intent(); //点这个通知干什么事情
+        Intent notificationIntent = new Intent(this, MainActivity.class); //点这个通知干什么事情
+//        notificationIntent.setAction(this, LoginActivity.class);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
                 notificationIntent, 0);
         notification.setLatestEventInfo(context, contentTitle, contentText,
                 contentIntent);
+
 
         Thread thread = new Thread() {
             @Override

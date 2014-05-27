@@ -90,13 +90,22 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+
+    public void onGotoLoginActivity2(View view) {
+        Intent intent = new Intent(this, LoginActivity2.class);
+        startActivity(intent);
+    }
+
     public void onGotoScrollViewActivity(View view) {
         Intent intent = new Intent(this, ScrollViewActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.zoomin, R.anim.zoomout);
-
     }
 
+    public void onGotoSwipActivity(View view) {
+        Intent intent = new Intent(this, SwipActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onStart() {
