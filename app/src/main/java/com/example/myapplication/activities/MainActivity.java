@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d(TAG, "onStart...");
+        Log.d(TAG, "onStart..");
     }
 
     @Override
