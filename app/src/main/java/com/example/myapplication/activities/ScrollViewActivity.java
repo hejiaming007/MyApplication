@@ -48,7 +48,7 @@ public class ScrollViewActivity extends ParentActivity {
                     LinearLayout.LayoutParams.MATCH_PARENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT);
 
-//            mLayout.addView(tView, params);//添加一个TextView控件
+//            mLayout.addView(tView, params);//添加一个TextView控件.
             Button button = new Button(ScrollViewActivity.this);//定义一个Button
             button.setText("Button" + index);//设置Button的文本信息
             button.setOnClickListener(mClickListener);// 添加点击事件监听
