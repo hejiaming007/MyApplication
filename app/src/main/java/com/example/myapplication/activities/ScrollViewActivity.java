@@ -57,7 +57,7 @@ public class ScrollViewActivity extends ParentActivity {
             //PieChat entry = new PieChat(ScrollViewActivity.this);
             mLayout.addView(button, params);//添加一个Button控件
             mLayout.addView(chart);
-            mHandler.post(mScrollToButton);//传递一个消息进行滚动
+            mHandler.post(mScrollToButton);//传递一个消息进行滚动.
 
         }
 
