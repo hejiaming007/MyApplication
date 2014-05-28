@@ -16,7 +16,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 
 import com.example.myapplication.R;
 
@@ -46,6 +46,7 @@ public class SwipActivity extends FragmentActivity implements ActionBar.TabListe
 
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
+
 
         // Specify that the Home/Up button should not be enabled, since there is no hierarchical
         // parent.
@@ -114,7 +115,7 @@ public class SwipActivity extends FragmentActivity implements ActionBar.TabListe
         @Override
         public Fragment getItem(int i) {
             switch (i) {
-                case 0:
+                case 2:
                     // The first section of the app is the most interesting -- it offers
                     // a launchpad into the other demonstrations in this example application.
                     return new LaunchpadSectionFragment();
@@ -136,7 +137,16 @@ public class SwipActivity extends FragmentActivity implements ActionBar.TabListe
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return "Section " + (position + 1);
+            switch (position) {
+                case 0:
+                    return "聊天";
+                case 1:
+                    return "发现";
+                case 2:
+                    return "通讯录";
+                default:
+                    return "N/A";
+            }
         }
     }
 
@@ -194,9 +204,19 @@ public class SwipActivity extends FragmentActivity implements ActionBar.TabListe
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
+//            View rootView = inflater.inflate(R.layout.fragment_section_dummy, container, false);
+//            Bundle args = getArguments();
+//            ((TextView) rootView.findViewById(android.R.id.text1)).setText(getString(R.string.dummy_section_text, args.getInt(ARG_SECTION_NUMBER)));
+//
             View rootView = inflater.inflate(R.layout.fragment_section_dummy, container, false);
-            Bundle args = getArguments();
-            ((TextView) rootView.findViewById(android.R.id.text1)).setText(getString(R.string.dummy_section_text, args.getInt(ARG_SECTION_NUMBER)));
+
+            LinearLayout mLayout = (LinearLayout) rootView.findViewById(R.id.LinearLayout);
+
+            for (int i = 0; i < 30; i++) {
+                View view = LayoutInflater.from(container.getContext()).inflate(R.layout.view_sample_entry, null);
+                mLayout.addView(view);
+            }
+
             return rootView;
         }
     }

@@ -51,7 +51,7 @@ public class ScrollViewActivity extends ParentActivity {
 //            mLayout.addView(tView, params);//添加一个TextView控件.
             Button button = new Button(ScrollViewActivity.this);//定义一个Button
             button.setText("Button" + index);//设置Button的文本信息
-            button.setOnClickListener(mClickListener);// 添加点击事件监听
+            button.setOnClickListener(mClickListener);// 添加点击事件监听.
             button.setId(index++);
             PieChart chart = new PieChart(ScrollViewActivity.this);
             //PieChat entry = new PieChat(ScrollViewActivity.this);
