@@ -50,6 +50,7 @@ public class LoginActivity2 extends Activity implements LoaderCallbacks<Cursor> 
      */
     private UserLoginTask mAuthTask = null;
 
+
     // UI references.
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
@@ -209,7 +210,8 @@ public class LoginActivity2 extends Activity implements LoaderCallbacks<Cursor> 
 
                 // Show primary email addresses first. Note that there won't be
                 // a primary email address if the user hasn't specified one.
-                ContactsContract.Contacts.Data.IS_PRIMARY + " DESC");
+                ContactsContract.Contacts.Data.IS_PRIMARY + " DESC"
+        );
     }
 
     @Override

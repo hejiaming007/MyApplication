@@ -1,0 +1,32 @@
+Ctrl + Q :  quick view documentation
+Ctrl + Shift + T:   smart quick
+Ctrl + Alt + B:  check all implementations
+Ctrl + /    comment                          //
+Ctrl + shift + /     multiple line comment   /*  */
+Shift+F1    view external documentation
+Ctrl + D   duplicate current line to next row.
+ctrl + shift + backspace   last edit location.
+folder can check history
+Ctrl + H   show class inheritance hierarchy
+Ctrl + E     recent file list
+F2     next syntax error
+F3     next occurrence
+Alt + select   column mode
+Alt + Enter   quick fix
+Alt + Enter  to class name, quick create test case
+Shift + click file name in editor, quick close.
+Alt + click 'x' in file name in editor, quick close all.
+Ctrl + J   check Live Template list
+Alt + up/down     previous/next method
+Ctrl + click to the file name in the editor,  open file in explorer
+Ctrl + shift + up/down      move statement up/down
+ctrl + shift + v    check clipboard history
+Alt+Shift+C to quickly review your recent changes to the project
+in project view, can enter text to quick search directly.
+Directory can be compare
+
+
+
+
+
+signKey.jks   password:  12345678

@@ -208,16 +208,20 @@ public class SwipActivity extends FragmentActivity implements ActionBar.TabListe
 //            Bundle args = getArguments();
 //            ((TextView) rootView.findViewById(android.R.id.text1)).setText(getString(R.string.dummy_section_text, args.getInt(ARG_SECTION_NUMBER)));
 //
+
+
             View rootView = inflater.inflate(R.layout.fragment_section_dummy, container, false);
 
-            LinearLayout mLayout = (LinearLayout) rootView.findViewById(R.id.LinearLayout);
+            LinearLayout linearLayout = (LinearLayout) rootView.findViewById(R.id.LinearLayout);
 
             for (int i = 0; i < 30; i++) {
-                View view = LayoutInflater.from(container.getContext()).inflate(R.layout.view_sample_entry, null);
-                mLayout.addView(view);
+                LayoutInflater.from(container.getContext()).inflate(R.layout.view_sample_entry, linearLayout);
             }
+
 
             return rootView;
         }
+
+
     }
 }

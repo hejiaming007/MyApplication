@@ -60,7 +60,7 @@ public class ServiceDemo extends Service {
             @Override
             public void run() {
                 while (true) {
-                    Log.d(TAG, "ServiceDemo is running...");
+                    //Log.d(TAG, "ServiceDemo is running...");
                     notificationManager.notify(new Random().nextInt(3), notification); //不同的id代表不同的通知，相同的id只会在通知栏显示一次
                     try {
                         Thread.sleep(1000);

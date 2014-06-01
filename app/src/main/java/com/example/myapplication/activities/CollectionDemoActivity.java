@@ -52,10 +52,12 @@ public class CollectionDemoActivity extends FragmentActivity {
         // Set up action bar.
         final ActionBar actionBar = getActionBar();
 
+
         // Specify that the Home button should show an "Up" caret, indicating that touching the
         // button will take the user one step up in the application's hierarchy.
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
         // Set up the ViewPager, attaching the adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mDemoCollectionPagerAdapter);
@@ -130,8 +132,10 @@ public class CollectionDemoActivity extends FragmentActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_collection_object, container, false);
             Bundle args = getArguments();
-            ((TextView) rootView.findViewById(android.R.id.text1)).setText(
-                    Integer.toString(args.getInt(ARG_OBJECT)));
+            if (rootView != null) {
+                ((TextView) rootView.findViewById(android.R.id.text1)).setText(
+                        Integer.toString(args.getInt(ARG_OBJECT)));
+            }
             return rootView;
         }
     }

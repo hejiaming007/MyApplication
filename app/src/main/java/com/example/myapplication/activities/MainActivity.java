@@ -77,7 +77,6 @@ public class MainActivity extends Activity {
                         isExit = false;
                     }
                 }, 2000);
-                ;
                 return false;
             }
         }

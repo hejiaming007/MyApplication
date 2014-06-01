@@ -1,10 +1,13 @@
+<!--
+  ~ Copyright (c) 2014. Jimmy own this code.
+  -->
+
 <resources>
 
     <string name="RepeatBackKeyToExit">确认退出？</string>
     <string name="Username">用户名</string>
     <string name="action_settings">设置</string>
     <string name="app_name">吉米</string>
-    <string name="hello_world">世界你好！</string>
     <string name="password">密码：</string>
     <string name="cancel">取消</string>
     <string name="login">登陆</string>

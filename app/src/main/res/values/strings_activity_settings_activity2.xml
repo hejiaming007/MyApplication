@@ -1,5 +1,9 @@
+<!--
+  ~ Copyright (c) 2014. Jimmy own this code.
+  -->
+
 <resources>
-        <string name="title_activity_settings_activity2">Settings</string>
+    <string name="title_activity_settings_activity2">Settings</string>
 
     <!-- Strings related to Settings -->
 
